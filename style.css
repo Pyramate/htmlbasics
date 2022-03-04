@@ -1,6 +1,6 @@
 h1{
     color:white;
-    font-size : 4rem;
+    font-size : 2em;
 }
 
 nav {
@@ -9,7 +9,7 @@ nav {
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -33,6 +33,7 @@ li {
 body {
     margin: 0;
     background-color: #F2F2F2;
+    line-height: 1.5;
   }
 
   header {
@@ -42,4 +43,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section {
+    margin: auto;
+    max-width: 65ch;
+    margin-bottom: 50px;
+}
+
+article h1 {
+    color: black;
+    font-size: 1em;
+    padding: 10px;
+}
+
+article {
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px
+}
+
+footer {
+    background-color: #f76c6c;
+    color: black;
+    padding: 10px;
+    margin: 0;
 }
