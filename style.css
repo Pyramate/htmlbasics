@@ -1,5 +1,6 @@
 h1{
-    color:#f76c6c;
+    color:white;
+    font-size : 4rem;
 }
 
 nav {
@@ -14,16 +15,31 @@ nav {
 
 nav h1 {
     color: white;
+    padding: 10px 20px;
+    margin: 0;
 }
 
 ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    padding: 20px;
+    padding: 10px 20px;
 }
-  body {
-    margin: 0 !important;
+
+body {
+    margin: 0;
+    background-color: #F2F2F2;
   }
+
+  header {
+    min-height: 250px;
+    background-image: url(https://loremflickr.com/cache/resized/65535_51511626776_a2f5bef0d3_h_1200_300_nofilter.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
