@@ -1,6 +1,7 @@
 :root { 
   --fontsize-L:clamp(1.5rem,5vw,2rem);
   --fontsize-S: clamp(0.4rem,3.5vw,1.2rem);
+  --fontsize-XS: clamp(0.5em,0.9vw,0.9em);
 }
 
 h1 {
@@ -63,7 +64,7 @@ section {
 
 article h1 {
   color: #f76c6c;
-  font-size: .8em;
+  font-size: var(--fontsize-XS);
   padding: 10px;
 
 }
@@ -118,5 +119,27 @@ footer {
     padding: 0px;
 
   }
+
+  article {
+    height: auto;
+  } 
   
+  .article1 {
+    grid-row-start: span 2;
+    align-items: flex-start;
+  }
+
+
+  .featured-posts {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+  
+}
+
+@media screen {
+  header h1{
+    filter: drop-shadow(12px 12px 6px black);}
 }
