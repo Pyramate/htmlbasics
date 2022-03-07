@@ -1,19 +1,21 @@
-/* :root { 
-  --fontsize-L:24px;
-  --fontsize-S: 16px;
-}*/
+:root { 
+  --fontsize-L:clamp(1.5rem,5vw,2rem);
+  --fontsize-S: clamp(0.4rem,3.5vw,1.2rem);
+}
 
 h1 {
   color: white;
-  font-size: 1rem;
+  font-size: var(--fontsize-L);
 }
 
 nav {
   background-color: #f76c6c;
   color: white;
   display:flex;
-  justify-content:space-between;
+  justify-content:space-evenly;
   max-width: 100%;
+  align-items: center;
+  padding: 10px 0px;
 }
 
 * {
@@ -23,7 +25,7 @@ nav {
 
 nav h1 {
   color: white;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 0;
 }
 
@@ -33,7 +35,8 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: .6rem;
+  font-size: var(--fontsize-S);
+  
 }
 
 body {
@@ -86,13 +89,23 @@ footer {
   margin: 0;
 }
 
-@media screen and (min-width:360px) { 
+@media screen and (min-width:361px) { 
   ul {
     display: flex;
     flex-direction:initial;
   }
   li {
-    padding: 10px 20px;
+    padding: 10px;
+
+  }
+  h1 {
+    font-size: var(--fontsize-L);
+    color: white;
+  }
+  nav {
+    justify-content:space-between;
+    padding: 0px;
+
   }
   
 }
